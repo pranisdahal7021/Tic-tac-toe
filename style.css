@@ -1,0 +1,223 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+    animation: titleAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes titleAnimation {
+    from {
+        color: #007bff;
+    }
+    to {
+        color: #ff4081;
+    }
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.05);
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#status {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.cell.x {
+    color: #ff5252;
+}
+
+.cell.o {
+    color: #4caf50;
+}
+
+.x-turn #status {
+    color: #ff5252;
+}
+
+.o-turn #status {
+    color: #4caf50;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+    animation: titleAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes titleAnimation {
+    from {
+        color: #007bff;
+    }
+    to {
+        color: #ff4081;
+    }
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.05);
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#status {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.cell.x {
+    color: #ff5252;
+}
+
+.cell.o {
+    color: #4caf50;
+}
+
+.x-turn #status {
+    color: #ff5252;
+}
+
+.o-turn #status {
+    color: #4caf50;
+}
